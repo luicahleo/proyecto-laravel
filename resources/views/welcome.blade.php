@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Prueba
+                    Prueba ya cargo
                 </div>
 
                 <div class="links">
