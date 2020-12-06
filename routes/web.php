@@ -40,3 +40,5 @@ Auth::routes();
 //en esta ruta, el '/' significa que va a cargar el login del auth
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/configuracion','UserController@config')->name('config');
+//ruta para  actualizar los datos de configuracion la pagina configuracion
+Route::post('/user/update','UserController@update')->name('user.update');
