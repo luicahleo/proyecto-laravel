@@ -42,3 +42,7 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/configuracion','UserController@config')->name('config');
 //ruta para  actualizar los datos de configuracion la pagina configuracion
 Route::post('/user/update','UserController@update')->name('user.update');
+//ruta para avatar
+Route::get('/user/avatar/{filename}','UserController@getImage')->name('user.avatar');
+
+
