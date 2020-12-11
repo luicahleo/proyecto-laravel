@@ -44,5 +44,9 @@ Route::get('/configuracion','UserController@config')->name('config');
 Route::post('/user/update','UserController@update')->name('user.update');
 //ruta para avatar
 Route::get('/user/avatar/{filename}','UserController@getImage')->name('user.avatar');
+//ruta para subir-imagen
+Route::get('/subir-imagen','ImageController@create')->name('image.create');
+//ruta para  recibir los datos del formulario de subir imagenes
+Route::post('/image/save', 'ImageController@save')->name('image.save');
 
 
